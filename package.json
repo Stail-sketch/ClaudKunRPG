@@ -1,15 +1,14 @@
 {
-  "name": "claude-kun-rpg",
+  "name": "@stail21/claudkun-rpg",
   "version": "1.0.0",
   "description": "Auto-shooting RPG that levels up as you use Claude Code. Idle game x Shmup x Clicker.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/anthropics/claude-kun-rpg"
+    "url": "git+https://github.com/Stail-sketch/ClaudKunRPG.git"
   },
   "main": "src/main.js",
   "bin": {
-    "claude-kun-hook": "./src/hook.js",
-    "claude-kun-rpg": "./src/cli.js"
+    "claude-kun-rpg": "src/cli.js"
   },
   "scripts": {
     "start": "unset ELECTRON_RUN_AS_NODE && electron . || set ELECTRON_RUN_AS_NODE= && electron .",
@@ -25,10 +24,10 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "electron": "^41.1.1",
     "electron-store": "^8.1.0"
   },
   "devDependencies": {
-    "electron": "^41.1.1",
     "electron-builder": "^24.9.1"
   },
   "build": {
